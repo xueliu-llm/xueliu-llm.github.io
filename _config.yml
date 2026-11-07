@@ -9,7 +9,7 @@ baseurl: ""
 repository: xueliu-llm/xueliu-llm.github.io
 author:
   name: *name
-  avatar: touxian.jpg # relative to images/
+  avatar: touxian_soft.jpg # relative to images/
   bio: "Undergraduate · Multimodal LLMs & Hallucination Mitigation"
   location: "Nanjing, China"
   email:

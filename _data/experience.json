@@ -1,22 +1,22 @@
 [
   {
-    "id": "multimodal-research",
-    "organization": "Multimodal LLM Research Group",
+    "id": "imag-lab",
+    "organization": "IMAG Lab, Nanjing University of Science and Technology",
     "url": "",
-    "logo": "/images/placeholders/institution.svg",
+    "logo": "/images/njust.png",
     "role": "Undergraduate Researcher",
-    "date_start": "09/2026",
+    "date_start": "09/2025",
     "date_end": "Present",
-    "description": "Investigating inference-time hallucination mitigation for multimodal LLMs: decoding-time interventions and attention-layer diagnostics."
+    "description": "Research on inference-time hallucination mitigation for multimodal LLMs."
   },
   {
-    "id": "embedded-contest",
-    "organization": "National Undergraduate Embedded Chip & System Design Contest",
+    "id": "xinchuang",
+    "organization": "Xinchuang Space (IC Innovation Space)",
     "url": "",
-    "logo": "/images/placeholders/institution.svg",
-    "role": "Team Member, Track 2 (PMUX Optimization)",
-    "date_start": "06/2026",
-    "date_end": "Present",
-    "description": "Optimizing PMUX structures for an embedded FPGA design contest."
+    "logo": "/images/xinchuang.png",
+    "role": "Student Member",
+    "date_start": "03/2026",
+    "date_end": "10/2026",
+    "description": "FPGA and embedded design practice; PMUX contest preparation."
   }
 ]

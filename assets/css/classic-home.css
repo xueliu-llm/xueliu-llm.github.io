@@ -9,15 +9,12 @@
 :root {
   --home-ink: #494e52;
   --home-muted: #6b7280;
-  --home-accent: #bf8192;
-  --home-line: #eddcd6;
-  --home-soft: #faf3f1;
+  --home-accent: #9a4652;
+  --home-line: #e8e2df;
+  --home-soft: #f7f5f4;
   --home-rose: #ca6f6f;
   --home-rose-deep: #9a4652;
   --home-wine: #8f1d2c;
-  --home-mist: #6f86a6;
-  --home-lilac: #987d9b;
-  --home-peach: #d88992;
 }
 body {
   color: var(--home-ink);
@@ -33,19 +30,14 @@ body, h1, h2, h3, h4, h5, h6 {
   backdrop-filter: blur(10px);
 }
 .greedy-nav { background: transparent; }
-.page__content .news-box {
-  background: rgba(111, 134, 166, .08);
-  border-left: 3px solid var(--home-mist);
-}
-.page__content .experience-card {
-  background: rgba(152, 125, 155, .08);
-  border-left: 3px solid var(--home-lilac);
-}
+.page__content .news-box { background: transparent; border-left: none; }
+.page__content .experience-card { background: transparent; border-left: none; }
 .page__content .project-card {
-  background: rgba(191, 129, 146, .07);
-  border-left: 3px solid var(--home-accent);
+  background: #fff;
+  border: 1px solid #e2d8d3;
+  border-left: none;
 }
-.page__content .publication-card { background: rgba(255, 253, 252, .82); }
+.page__content .publication-card { background: #fff; border: 1px solid #e2d8d3; }
 .page__content h1, .page__content h2, .page__content h3 { color: var(--home-ink); }
 a { color: var(--home-rose-deep); }
 a:hover { color: var(--home-wine); }
@@ -94,8 +86,8 @@ a:hover { color: var(--home-wine); }
 .research-interests { margin: 24px 0 28px; }
 .research-caption { display: block; margin-bottom: 9px; color: #9a7a80; font-size: 10px; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; }
 .research-tags { display: flex; flex-wrap: wrap; align-items: center; gap: 9px; }
-.research-tags svg { flex: 0 0 17px; width: 17px; height: 17px; fill: none; stroke: currentColor; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
-.research-topic { display: inline-flex; align-items: center; gap: 7px; padding: 9px 12px; border: 1px solid #e0bfb7; border-radius: 11px; color: var(--home-rose-deep); background: linear-gradient(135deg, #ffffffd9, #f9e9e6c9); font-size: 13px; font-weight: 550; line-height: 1.4; white-space: nowrap; }
+.research-tags svg { display: none; }
+.research-topic { display: inline-flex; align-items: center; gap: 7px; padding: 7px 11px; border: 1px solid #ece4e0; border-radius: 10px; color: #8a8084; background: #fdfcfc; font-size: 12px; font-weight: 500; line-height: 1.4; white-space: nowrap; }
 @media (max-width: 600px) {
   .research-interests { margin: 20px 0 24px; }
   .research-tags { gap: 8px; }
@@ -110,12 +102,9 @@ a:hover { color: var(--home-wine); }
   gap: 12px;
   margin-bottom: 5px;
   padding: 7px 12px;
-  border-left: 3px solid var(--home-mist);
-  background: linear-gradient(90deg, rgba(255, 253, 252, .7), rgba(255, 247, 245, .15));
+  border-left: none;
+  background: transparent;
 }
-.award-list .award-row:nth-child(4n+2) { border-left-color: var(--home-lilac); }
-.award-list .award-row:nth-child(4n+3) { border-left-color: var(--home-accent); }
-.award-list .award-row:nth-child(4n+4) { border-left-color: var(--home-peach); }
 .award-date { color: var(--home-muted); font-size: 13px; font-weight: 700; letter-spacing: .02em; }
 .award-date time { white-space: nowrap; }
 .award-details { min-width: 0; }
@@ -129,6 +118,10 @@ a:hover { color: var(--home-wine); }
 }
 
 /* Balance the larger figures with comfortable margins around the homepage. */
+@media (min-width: 900px) {
+  .education-container, .experience-container { display: grid; grid-template-columns: 1fr 1fr; gap: 10px 24px; }
+  .education-container .experience-card, .experience-container .experience-card { margin-bottom: 0; }
+}
 #main,
 .masthead__inner-wrap,
 .page__footer footer {
