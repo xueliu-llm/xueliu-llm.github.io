@@ -1,0 +1,22 @@
+[
+  {
+    "id": "multimodal-research",
+    "organization": "Multimodal LLM Research Group",
+    "url": "",
+    "logo": "/images/placeholders/institution.svg",
+    "role": "Undergraduate Researcher",
+    "date_start": "09/2026",
+    "date_end": "Present",
+    "description": "Investigating inference-time hallucination mitigation for multimodal LLMs: decoding-time interventions and attention-layer diagnostics."
+  },
+  {
+    "id": "embedded-contest",
+    "organization": "National Undergraduate Embedded Chip & System Design Contest",
+    "url": "",
+    "logo": "/images/placeholders/institution.svg",
+    "role": "Team Member, Track 2 (PMUX Optimization)",
+    "date_start": "06/2026",
+    "date_end": "Present",
+    "description": "Optimizing PMUX structures for an embedded FPGA design contest."
+  }
+]

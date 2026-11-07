@@ -1,0 +1,20 @@
+# main links links
+
+main:
+  - title: "News"
+    url: "/#news"
+
+  - title: "Education"
+    url: "/#education"
+
+  - title: "Experience"
+    url: "/#experience"
+
+  - title: "Project"
+    url: "/#projects"
+
+  - title: "Blog"
+    url: "/#blog"
+
+  - title: "Awards"
+    url: "/#awards"

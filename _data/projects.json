@@ -1,0 +1,14 @@
+[
+  {
+    "title": "Inference-time Hallucination Mitigation for MLLMs",
+    "url": "",
+    "image": "/images/placeholders/project.svg",
+    "description": "Systematic study of decoding-time interventions (VCD, DoLa, MinP, QKNorm) for reducing hallucinations in multimodal LLMs, with attention-layer diagnostics across controlled replay experiments."
+  },
+  {
+    "title": "PMUX Structure Optimization",
+    "url": "",
+    "image": "/images/placeholders/project.svg",
+    "description": "Embedded chip design contest project: optimizing PMUX structures with a custom logic synthesis and evaluation flow."
+  }
+]
