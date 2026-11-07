@@ -9,7 +9,7 @@
 :root {
   --home-ink: #273444;
   --home-muted: #697386;
-  --home-accent: #315d80;
+  --home-accent: #52adc8;
   --home-line: #e1e5e9;
   --home-soft: #f7f9fb;
 }
@@ -27,7 +27,9 @@ body, h1, h2, h3, h4, h5, h6 {
 .page__content .experience-card { background: rgba(247, 249, 251, .8); }
 .page__content .publication-card,
 .page__content .project-card { background: rgba(255, 255, 255, .82); }
-.page__content h1, .page__content h2, .page__content h3 { color: var(--home-accent); }
+.page__content h1, .page__content h2, .page__content h3 { color: var(--home-ink); }
+a { color: #52adc8; }
+a:hover { color: #428aa0; }
 .page__content .main-heading {
   display: flex;
   flex-wrap: wrap;
