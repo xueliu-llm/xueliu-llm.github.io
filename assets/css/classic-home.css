@@ -1,4 +1,4 @@
-/* Original homepage layout, with a translucent landscape and blue/slate palette. */
+/* Homepage layout with a clean white background and blue/slate palette. */
 @font-face {
   font-family: "Permanent Marker";
   src: url("../fonts/permanent-marker/permanent-marker.woff2") format("woff2");
@@ -12,18 +12,8 @@
   --home-accent: #315d80;
   --home-line: #e1e5e9;
   --home-soft: #f7f9fb;
-  --home-background-opacity: .24;
 }
 body { color: var(--home-ink); background-color: #fff; isolation: isolate; }
-body::before {
-  content: "";
-  position: fixed;
-  inset: 0;
-  z-index: -1;
-  pointer-events: none;
-  background: url("../../images/background.jpg") center / cover no-repeat;
-  opacity: var(--home-background-opacity);
-}
 .masthead {
   background: rgba(255, 255, 255, .88);
   -webkit-backdrop-filter: blur(10px);
