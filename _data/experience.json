@@ -18,5 +18,15 @@
     "date_start": "03/2026",
     "date_end": "10/2026",
     "description": "FPGA and embedded design practice; PMUX contest preparation."
+  },
+  {
+    "id": "education",
+    "organization": "Nanjing University of Science and Technology",
+    "url": "https://english.njust.edu.cn",
+    "logo": "/images/njust.png",
+    "role": "B.Eng. in Electronic Information Engineering",
+    "date_start": "09/2024",
+    "date_end": "06/2028 (expected)",
+    "description": "School of Electronic and Optical Engineering. Focus on multimodal LLM research, FPGA, and embedded systems."
   }
 ]
