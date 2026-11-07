@@ -14,6 +14,9 @@
   --home-soft: #f7f9fb;
 }
 body { color: var(--home-ink); background-color: #fff; isolation: isolate; }
+body, h1, h2, h3, h4, h5, h6 {
+  font-family: "Arial Rounded MT Bold", "Verdana", "Comic Sans MS", "Segoe Print", "Lucida Handwriting", "Apple Chancery", "Zapfino", sans-serif;
+}
 .masthead {
   background: rgba(255, 255, 255, .88);
   -webkit-backdrop-filter: blur(10px);
