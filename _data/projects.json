@@ -1,14 +1,16 @@
 [
   {
-    "title": "Inference-time Hallucination Mitigation for MLLMs",
+    "title": "Multimodal Hallucination Research",
     "url": "",
     "image": "/images/project-paper.png",
-    "description": "Systematic study of decoding-time interventions (VCD, DoLa, MinP, QKNorm) for reducing hallucinations in multimodal LLMs, with attention-layer diagnostics across controlled replay experiments."
+    "badge": "Under Review · CVPR",
+    "description": "Understanding and mitigating object hallucinations in multimodal LLMs through attention analysis and training-free inference interventions, with a focus on how models use visual evidence."
   },
   {
-    "title": "PMUX Structure Optimization",
+    "title": "PMUX Comprehensive Optimization",
     "url": "",
     "image": "/images/project-pmux.png",
-    "description": "Embedded chip design contest project: optimizing PMUX structures with a custom logic synthesis and evaluation flow."
+    "badge": "National Second Prize · Embedded Chip & System Design Contest",
+    "description": "A structure-aware Yosys optimization pass with automated evaluation and formal equivalence checking, reducing FPGA logic usage by 27.27% on average across nine benchmarks."
   }
 ]
