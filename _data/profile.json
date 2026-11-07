@@ -1,10 +1,8 @@
 {
   "intro_html": "<p>Hi! I am Xue Liu, a third-year undergraduate student in <strong>Electronic Information Engineering</strong> at <strong>Nanjing University of Science and Technology (NJUST)</strong>.</p><p>My research focuses on <strong>multimodal large language models (MLLMs)</strong>, especially <strong>inference-time hallucination mitigation</strong>. I am also interested in FPGA and embedded systems, and I enjoy building practical systems end to end.</p><p>Feel free to reach out if you share similar interests.</p>",
   "interests": [
-    "Multimodal Large Language Models",
+    "Multimodal LLM Theory",
     "LLM Hallucination Mitigation",
-    "Inference-time Methods",
-    "LLM Theory",
     "FPGA & Embedded Systems"
   ]
 }
