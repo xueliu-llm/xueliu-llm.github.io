@@ -12,6 +12,10 @@
   --home-muted: #7A828C;
   --home-accent: #167D9A;
   --home-warm: #9F6A45;
+  --warm-1: #9C6D1E;
+  --warm-2: #B0563B;
+  --warm-3: #9F6A45;
+  --warm-4: #A15C5C;
   --home-line: #E7EAEE;
   --home-soft: #F8F9FA;
 }
@@ -38,8 +42,14 @@ body, h1, h2, h3, h4, h5, h6 {
 }
 .page__content .publication-card { background: #fff; border: 1px solid #E7EAEE; }
 .page__content h1, .page__content h3 { color: var(--home-heading); }
-.page__content h2 { color: var(--home-warm); }
-.page__content > p strong { color: var(--home-warm); font-weight: 600; }
+.page__content h2:nth-of-type(4n+1) { color: var(--warm-1); }
+.page__content h2:nth-of-type(4n+2) { color: var(--warm-2); }
+.page__content h2:nth-of-type(4n+3) { color: var(--warm-3); }
+.page__content h2:nth-of-type(4n+4) { color: var(--warm-4); }
+.page__content > p strong.w1 { color: var(--warm-1); font-weight: 600; }
+.page__content > p strong.w2 { color: var(--warm-2); font-weight: 600; }
+.page__content > p strong.w3 { color: var(--warm-3); font-weight: 600; }
+.page__content > p strong.w4 { color: var(--warm-4); font-weight: 600; }
 a { color: #167D9A; }
 a:hover { color: #0F607A; }
 .page__content .main-heading {
