@@ -5,5 +5,5 @@ _site/
 Gemfile.lock
 node_modules/
 local/
-vendor/
+/vendor/
 .DS_Store
