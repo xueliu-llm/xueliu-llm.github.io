@@ -9,7 +9,7 @@ redirect_from:
 ---
 {% include home/intro.html %}
 {% include home/news.html %}
-{% include home/projects.html %}
 {% include home/experience.html %}
+{% include home/projects.html %}
 {% include home/blog.html %}
 {% include home/awards.html %}
