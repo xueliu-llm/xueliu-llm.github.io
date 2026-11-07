@@ -10,7 +10,7 @@ repository: xueliu-llm/xueliu-llm.github.io
 author:
   name: *name
   avatar: touxian.jpg # relative to images/
-  bio: "Undergraduate · Multimodal LLMs & Hallucination Mitigation"
+  bio: "Undergraduate · Multimodal LLMs & Digital IC"
   location: "Nanjing, China"
   email:
   uri:
