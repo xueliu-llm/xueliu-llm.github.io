@@ -39,6 +39,7 @@ body, h1, h2, h3, h4, h5, h6 {
 .page__content .publication-card { background: #fff; border: 1px solid #E7EAEE; }
 .page__content h1, .page__content h3 { color: var(--home-heading); }
 .page__content h2 { color: var(--home-warm); }
+.page__content > p strong { color: var(--home-warm); font-weight: 600; }
 a { color: #167D9A; }
 a:hover { color: #0F607A; }
 .page__content .main-heading {
