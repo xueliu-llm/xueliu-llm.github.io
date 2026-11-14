@@ -10,7 +10,7 @@
     "title": "PMUX Comprehensive Optimization",
     "url": "",
     "image": "/images/project-pmux.png",
-    "badge": "National Second Prize · Embedded Chip & System Design Contest",
-    "description": "A structure-aware Yosys optimization pass with automated evaluation and formal equivalence checking, reducing FPGA logic usage by 27.27% on average across nine benchmarks."
+    "badge": "Best Work Award · Ehiway Cup",
+    "description": "A structure-aware Yosys optimization pass with automated evaluation and formal equivalence checking, reducing FPGA logic usage by 30% on average across nine benchmarks."
   }
 ]
