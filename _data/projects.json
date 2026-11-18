@@ -4,13 +4,13 @@
     "url": "",
     "image": "/images/project-rotb.png",
     "badge": "Under Review · CVPR",
-    "description": "Understanding and mitigating object hallucinations in multimodal LLMs through attention analysis and training-free inference interventions, with a focus on how models use visual evidence."
+    "description": "Understanding and mitigating object hallucinations in multimodal LLMs through attention mechanism analysis and inference interventions, with a focus on how models use visual evidence."
   },
   {
     "title": "PMUX Comprehensive Optimization",
     "url": "",
     "image": "/images/project-pmux.png",
-    "badge": "Ehiway Cup (FPGA Track) · National Best Award",
+    "badge": "National Embedded Contest · Ehiway Cup · National Best Work",
     "description": "A structure-aware Yosys optimization pass with automated evaluation and formal equivalence checking, reducing FPGA logic usage by 30% on average across nine benchmarks."
   }
 ]
