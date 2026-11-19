@@ -1,14 +1,34 @@
-<h2 id="projects">Projects</h2>
-{% for project in site.data.projects %}
-<div class="project-card">
-  <div class="card-content">
-    {% if project.image and project.image != '' %}<div class="pub-media-rotator"><img src="{{ project.image | relative_url }}" alt="{{ project.title | escape }}" loading="lazy" width="640" height="360"></div>{% endif %}
-    <div class="card-description">
-      <strong>{% if project.url and project.url != '' %}<a href="{{ project.url | relative_url }}">{{ project.title | escape }}</a>{% else %}{{ project.title | escape }}{% endif %}</strong>
-      {% if project.badge and project.badge != '' %}<span class="proj-badge">{{ project.badge | escape }}</span>{% endif %}
-      <p>{{ project.description | escape }}</p>
-      {% if project.url and project.url != '' %}<a href="{{ project.url | relative_url }}">[Project]</a>{% endif %}
-    </div>
+<section class="apple-section reveal-on-scroll" aria-labelledby="projects">
+  <div class="section-header">
+    <span class="section-eyebrow">Selected Work</span>
+    <h2 id="projects">Projects</h2>
   </div>
-</div>
-{% endfor %}
+  <div class="projects-stack">
+    {% for project in site.data.projects %}
+    <article class="project-card">
+      <div class="project-card__header">
+        {% if project.badge and project.badge != '' %}
+        <span class="proj-badge">{{ project.badge | escape }}</span>
+        {% endif %}
+        <h3 class="project-card__title">
+          {% if project.url and project.url != '' %}<a href="{{ project.url | relative_url }}" target="_blank" rel="noopener">{{ project.title | escape }}</a>{% else %}{{ project.title | escape }}{% endif %}
+        </h3>
+        <p class="project-card__desc">{{ project.description | escape }}</p>
+        {% if project.url and project.url != '' %}
+        <a class="project-card__link" href="{{ project.url | relative_url }}" target="_blank" rel="noopener">Learn more <span aria-hidden="true">›</span></a>
+        {% endif %}
+      </div>
+      {% if project.image and project.image != '' %}
+      <div class="project-card__stage">
+        <button type="button" class="project-figure-btn" data-lightbox-src="{{ project.image | relative_url }}" data-lightbox-alt="{{ project.title | escape }}" aria-label="Expand figure for {{ project.title | escape }}">
+          <img src="{{ project.image | relative_url }}" alt="{{ project.title | escape }}" loading="lazy">
+          <span class="project-zoom-hint" aria-hidden="true">
+            <i class="fas fa-expand" aria-hidden="true"></i> Inspect Figure
+          </span>
+        </button>
+      </div>
+      {% endif %}
+    </article>
+    {% endfor %}
+  </div>
+</section>

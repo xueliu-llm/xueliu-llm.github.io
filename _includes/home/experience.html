@@ -1,16 +1,25 @@
-<h2 id="experience">Experience</h2>
-<div class="experience-container">
-  {% for item in site.data.experience %}
-  <div class="experience-card">
-    <img src="{{ item.logo | relative_url }}" alt="" class="experience-logo" width="60" height="60">
-    <div class="experience-info">
-      <div class="experience-header">
-        <strong>{% if item.url and item.url != '' %}<a href="{{ item.url | relative_url }}">{{ item.organization | escape }}</a>{% else %}{{ item.organization | escape }}{% endif %}</strong>
+<section class="apple-section reveal-on-scroll" aria-labelledby="experience">
+  <div class="section-header">
+    <span class="section-eyebrow">Background</span>
+    <h2 id="experience">Experience</h2>
+  </div>
+  <div class="experience-container">
+    {% for item in site.data.experience %}
+    <article class="experience-card">
+      <div class="experience-card-top">
+        <div class="experience-logo-wrap">
+          <img src="{{ item.logo | relative_url }}" alt="{{ item.organization | escape }}" class="experience-logo" width="60" height="60">
+        </div>
         <span class="experience-date">{% include date.html value=item.date_start %} – {% include date.html value=item.date_end %}</span>
       </div>
-      <div class="experience-role">{{ item.role | escape }}</div>
-      <div class="experience-description">{{ item.description | escape }}</div>
-    </div>
+      <div class="experience-info">
+        <h3 class="experience-org">
+          {% if item.url and item.url != '' %}<a href="{{ item.url | relative_url }}" target="_blank" rel="noopener">{{ item.organization | escape }}</a>{% else %}{{ item.organization | escape }}{% endif %}
+        </h3>
+        <div class="experience-role">{{ item.role | escape }}</div>
+        <p class="experience-description">{{ item.description | escape }}</p>
+      </div>
+    </article>
+    {% endfor %}
   </div>
-  {% endfor %}
-</div>
+</section>

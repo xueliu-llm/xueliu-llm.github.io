@@ -1,6 +1,16 @@
-<h2 id="news">News</h2>
-<div class="news-box">
-  <ul class="news-list">
-    {% for item in site.data.news %}<li><span class="news-date">{{ item.date | escape }}</span> {{ item.text }}</li>{% endfor %}
-  </ul>
-</div>
+<section class="apple-section reveal-on-scroll" aria-labelledby="news">
+  <div class="section-header">
+    <span class="section-eyebrow">Updates</span>
+    <h2 id="news">News</h2>
+  </div>
+  <div class="news-box">
+    <ul class="news-list">
+      {% for item in site.data.news %}
+      <li class="news-item">
+        <span class="news-date">{{ item.date | escape }}</span>
+        <span class="news-text">{{ item.text }}</span>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>

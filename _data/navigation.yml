@@ -1,4 +1,4 @@
-# main links links
+# main links
 
 main:
   - title: "News"
@@ -7,11 +7,8 @@ main:
   - title: "Experience"
     url: "/#experience"
 
-  - title: "Project"
+  - title: "Projects"
     url: "/#projects"
-
-  - title: "Blog"
-    url: "/#blog"
 
   - title: "Awards"
     url: "/#awards"

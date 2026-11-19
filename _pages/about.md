@@ -2,7 +2,7 @@
 permalink: /
 layout: single
 homepage_palette: classic-blue
-author_profile: true
+author_profile: false
 redirect_from:
   - /about/
   - /about.html
@@ -11,5 +11,4 @@ redirect_from:
 {% include home/news.html %}
 {% include home/experience.html %}
 {% include home/projects.html %}
-{% include home/blog.html %}
 {% include home/awards.html %}
