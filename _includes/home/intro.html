@@ -1,62 +1,11 @@
-{% assign author = site.author %}
-<section class="apple-hero" id="about" aria-label="Introduction">
-  <div class="hero-avatar-wrap">
-    {% if author.avatar contains "://" %}
-      <img class="hero-avatar" src="{{ author.avatar | escape }}" alt="{{ author.name | escape }}" width="120" height="120">
-    {% else %}
-      <img class="hero-avatar" src="{{ author.avatar | remove_first: '/images/' | prepend: '/images/' | relative_url }}" alt="{{ author.name | escape }}" width="120" height="120">
-    {% endif %}
-  </div>
-
-  <h1 class="hero-name">{{ author.name | default: site.title | escape }}</h1>
-  {% if author.bio %}
-  <p class="hero-tagline">{{ author.bio | escape }}</p>
-  {% endif %}
-
-  <div class="hero-actions">
-    {% if author.github %}
-    <a class="hero-pill hero-pill--primary" href="https://github.com/{{ author.github | escape }}" target="_blank" rel="noopener">
-      <i class="fab fa-github" aria-hidden="true"></i>
-      <span>GitHub</span>
-    </a>
-    {% endif %}
-    {% if author.email %}
-    <a class="hero-pill" href="mailto:{{ author.email | escape }}">
-      <i class="fas fa-envelope" aria-hidden="true"></i>
-      <span>Email</span>
-    </a>
-    {% endif %}
-    {% if author.googlescholar %}
-    <a class="hero-pill" href="{{ author.googlescholar | escape }}" target="_blank" rel="noopener">
-      <i class="ai ai-google-scholar" aria-hidden="true"></i>
-      <span>Google Scholar</span>
-    </a>
-    {% endif %}
-    {% if author.orcid %}
-    <a class="hero-pill" href="{{ author.orcid | escape }}" target="_blank" rel="noopener">
-      <i class="ai ai-orcid" aria-hidden="true"></i>
-      <span>ORCID</span>
-    </a>
-    {% endif %}
-    {% if author.linkedin %}
-    <a class="hero-pill" href="https://www.linkedin.com/in/{{ author.linkedin | escape }}" target="_blank" rel="noopener">
-      <i class="fab fa-linkedin" aria-hidden="true"></i>
-      <span>LinkedIn</span>
-    </a>
-    {% endif %}
-    {% if author.twitter %}
-    <a class="hero-pill" href="https://twitter.com/{{ author.twitter | escape }}" target="_blank" rel="noopener">
-      <i class="fab fa-twitter" aria-hidden="true"></i>
-      <span>Twitter</span>
-    </a>
-    {% endif %}
-    {% if author.location %}
-    <span class="hero-pill hero-pill--muted">
-      <i class="fas fa-location-dot" aria-hidden="true"></i>
-      <span>{{ author.location | escape }}</span>
+<section class="apple-intro" id="about" aria-label="Introduction">
+  <h1 class="main-heading">
+    <span class="greeting-lead">
+      <span>Hi there</span>
+      <img class="intro-wave" src="{{ '/images/Hi.gif' | relative_url }}" width="32" height="32" alt="">
     </span>
-    {% endif %}
-  </div>
+    <span class="greeting-message">Welcome to my Homepage!</span>
+  </h1>
 
   <div class="hero-bio">
     {{ site.data.profile.intro_html }}

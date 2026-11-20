@@ -2,7 +2,7 @@
 permalink: /
 layout: single
 homepage_palette: classic-blue
-author_profile: false
+author_profile: true
 redirect_from:
   - /about/
   - /about.html
